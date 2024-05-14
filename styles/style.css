@@ -13,6 +13,7 @@
 }
 
 html {
+  width: 100vw;
   scroll-behavior: smooth;
   user-select: none;
   overflow-x: hidden;
@@ -24,13 +25,12 @@ svg {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   background-image: url("../images/BG_pattern.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -4;
 }
 
 /* Loader */
@@ -156,12 +156,14 @@ body {
   top: 0%;
   left: 0%;
   width: 100vw;
+  overflow-x: hidden;
 }
 .LandingImg {
-  position: absolute;
+  position: relative;
   top: -6%; left: 50%;
   transform: translate(-50%, 0%);
   height: 100vh;
+  width: auto;
   border-bottom-left-radius: 30%;
   border-bottom: 10px solid var(--primary-color);
   z-index: -2;

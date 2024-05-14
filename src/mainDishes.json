@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img_class": "couscous-img",
+    "name": "Couscous",
+    "img_src": "images/Kitchen-Authentic-Moroccan-Couscous-26.jpg",
+    "price": 120,
+    "ingredients": "Couscous - lamb - vegetables - chickpeas - spices"
+  },
+  {
+    "id": 2,
+    "img_class": "pastilla-img",
+    "name": "Chicken Pastilla",
+    "img_src": "images/CHICKEN_PASTILLA.jpg",
+    "price": 140,
+    "ingredients": "Chicken - almonds - eggs - spices"
+  },
+  {
+    "id": 3,
+    "img_class": "sushi-img",
+    "name": "Sushi Platter",
+    "img_src": "images/niclas-illg-Y9pFfA4Z3g0-unsplash.jpg",
+    "price": 180,
+    "ingredients": "Sushi rice - salmon - tuna - cucumber - avocado"
+  },
+  {
+    "id": 4,
+    "img_class": "chicken-img",
+    "name": "Chicken Quesadillas",
+    "img_src": "images/Chicken_quesadillas_image.jpg",
+    "price": 100,
+    "ingredients": "Grilled chicken - cheese - bell peppers - onions - flour tortillas"
+  },
+  {
+    "id": 5,
+    "img_class": "pizzaM-img",
+    "name": "Classic Margherita Pizza",
+    "img_src": "images/chad-montano-MqT0asuoIcU-unsplash.jpg",
+    "price": 120,
+    "ingredients": "Pizza dough - tomato sauce - fresh mozzarella cheese - basil"
+  },
+  {
+    "id": 6,
+    "img_class": "hummus-img",
+    "name": "Hummus & Falafel",
+    "img_src": "images/thomas-wavid-johns-V3OnqusloQE-unsplash.jpg",
+    "price": 65,
+    "ingredients": "Chickpeas - tahini - garlic - lemon juice - herbs - spices"
+  }
+]

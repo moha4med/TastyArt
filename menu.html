@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Art | Menu</title>
+
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/modern-normalize.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+
+    <link rel="icon" href="images/TA_LOGO.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&family=Girassol&family=Junge&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="https://kit.fontawesome.com/5183f680e6.js" crossorigin="anonymous"></script>
+    <script defer src="src/swiper-bundle.min.js"></script>
+    <script defer src="src/main.js"></script>
+  </head>
+
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <div class="navBar container">
+        <div class="navbar__top">
+          <a href="menu.html">
+            <img
+              class="RestLogo"
+              src="images/TA_LOGO.png"
+              alt="Restaurant logo"
+            />
+          </a>
+
+          <button class="navBar__bars" id="navToggle">
+            <span>MENU</span>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav>
+          <ul class="navBar__links">
+            <li>
+              <a href="index.html#home">
+                <span>Home</span>
+                <div class="active_line"></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#about">
+                <span>About</span>
+                <div class="active_line"></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>Menu</span>
+                <div class="active_line"></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#gallery">
+                <span>Gallery</span>
+                <div class="active_line"></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="index.html#ReserveTable">
+                <span>Reserve a table</span>
+                <div class="active_line"></div>
+              </a>
+            </li>
+
+            <button class="navBar__close" id="navClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="maskBG"></div>
+
+    <div class="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>0</span>
+    </div>
+
+    <div class="cart-TAB">
+      <h1>SHOPPING CART</h1>
+
+      <div class="cart-list">
+
+      </div>
+
+      <div class="cart-btns">
+        <button class="close-cart-btn">Close</button>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <section id="landing">
+      <div class="landing-container">
+        <img class="menu-LandingImg"
+          src="images/pexels-mali-110813.jpg" alt="Restaurant image"
+        />
+        <div class="overlay"></div>
+      </div>
+
+      <div class="menu-LandTitle hidden">
+        <img class="TastyA_text" src="images/TastyArt.png" alt="Tasty Art" />
+        <span class="menu_text">Menu</span>
+      </div>
+    </section>
+
+    <section id="categorys" class="container">
+      <div class="Title hidden">
+        <span class="categorysTitle_left">Our</span>
+        <span class="categorysTitle_right">CATEGORYS</span>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="categorys-wrapper swiper-wrapper hidden">
+            <div class="swiper-slide menu-wrapper menu-w1">
+              <img
+                class="menuImg main_dish-img"
+                src="images/main_dish.jpg"
+                alt="Restaurant main dish"
+              />
+              <div class="menu-wBottom">
+                <span>Main Dish</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide menu-wrapper menu-w2">
+              <img
+                class="menuImg soup-img"
+                src="images/soup.jpg"
+                alt="Restaurant soup"
+              />
+              <div class="menu-wBottom">
+                <span>Soup</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide menu-wrapper menu-w3">
+              <img
+                class="menuImg salade-img"
+                src="images/salade.jpg"
+                alt="Restaurant salade"
+              />
+              <div class="menu-wBottom">
+                <span>Salade</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide menu-wrapper menu-w4">
+              <img
+                class="menuImg dessert-img"
+                src="images/dessert.jpg"
+                alt="Restaurant dessert"
+              />
+              <div class="menu-wBottom">
+                <span>Dessert</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-Btn"></div>
+        <div class="swiper-button-prev swiper-Btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="main-dishes" class="container">
+      <div class="header">
+        <img
+          src="images/lily-banse - YHSwy6uqvk-unsplash.jpg"
+          alt="Main dishes header"
+        />
+        <div class="header-title hidden">
+          <span class="title_left">Main</span>
+          <span class="title_right">DISHES</span>
+        </div>
+      </div>
+
+      <div id="mainDish" class="dishes-wrapper wrapper hidden">
+        
+      </div>
+    </section>
+
+    <section id="soups" class="container">
+      <div class="header">
+        <img
+          src="images/ella-olsson-fxJTl_gDh28-unsplash.jpg"
+          alt="Soups header"
+        />
+
+        <div class="header-title hidden">
+          <span class="title_left">S</span>
+          <span class="title_right">OUP</span>
+        </div>
+      </div>
+
+      <div id="Soup" class="dishes-wrapper wrapper hidden">
+        
+      </div>
+    </section>
+
+    <section id="salades" class="container">
+      <div class="header">
+        <img
+          src="images/louis-hansel-phEaeqe555M-unsplash.jpg"
+          alt="Salades header"
+        />
+
+        <div class="header-title hidden">
+          <span class="title_left">S</span>
+          <span class="title_right">ALADE</span>
+        </div>
+      </div>
+
+      <div id="Salade" class="dishes-wrapper wrapper hidden">
+        
+      </div>
+    </section>
+
+    <section id="desserts" class="container">
+      <div class="header">
+        <img
+          src="images/edward-howell-fOkRDohySZw-unsplash.jpg"
+          alt="Main dishes header"
+        />
+        <div class="header-title hidden">
+          <span class="title_left">D</span>
+          <span class="title_right">ESSERT</span>
+        </div>
+      </div>
+
+      <div id="Dessert" class="dishes-wrapper wrapper hidden">
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerPage">
+        <div class="footer_top">
+          <div class="footerLinks hidden">
+            <img
+              class="footerLogo"
+              src="images/TA_LOGO.png"
+              alt="TastyArt logo"
+            />
+
+            <a class="short_links" href="#home"> HOME </a>
+            <a class="short_links" href="#about"> ABOUT </a>
+            <a class="short_links" href="menu.html"> MENU </a>
+            <a class="short_links" href="#gallery"> GALLERY </a>
+            <a class="short_links" href="#ReserveTable"> RESERVE A TABLE </a>
+            <a class="short_links" href="faq.html"> FAQ </a>
+          </div>
+
+          <div class="followUs hidden">
+            <div class="footerTitle">
+              <span class="followUs_left">FOLLOW</span>
+              <span class="followUs_right">Us</span>
+            </div>
+
+            <div class="social_links">
+              <div class="links_container">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>Linkedin</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Youtube</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="footerContacts hidden">
+            <div class="footerTitle">
+              <span class="Contacts_left">C</span>
+              <span class="Contacts_right">ONTACTS</span>
+            </div>
+
+            <div class="footerAddress">
+              <span class="address_title">ADDRESS</span>
+              <span class="address_details">Somewhere 4700, Morocco</span>
+
+              <span class="address_title">PHONE</span>
+              <span class="address_details">+212 6 45 98 32 21</span>
+
+              <span class="address_title">EMAIL</span>
+              <span class="address_details">tastyArt2024@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#landing">
+          <div class="backTop">
+            <i class="fa-solid fa-arrow-up-long"></i>
+          </div>
+        </a>
+
+        <hr class="solid" />
+
+        <div class="footer_bootom hidden">
+          <span>©2024 Tasty Art. All rights reserved.</span>
+          <p>
+            Monday - Sunday, From
+            <span style="color: var(--primary-color)">10.00</span> to
+            <span style="color: var(--primary-color)">23.00</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Art | Home page</title>
+
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="styles/modern-normalize.css">
+    <link rel="stylesheet" href="styles/components/header.css">
+    <link rel="stylesheet" href="styles/components/footer.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/utils.css">
+
+    <link rel="icon" href="images/TA_LOGO.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Beau+Rivage&family=Girassol&family=Junge&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <script defer src="https://kit.fontawesome.com/5183f680e6.js" crossorigin="anonymous"></script>
+    <script defer src="src/swiper-bundle.min.js"></script>
+    <script defer src="src/main.js"></script>
+  </head>
+
+  <body>
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <header>
+      <div class="navBar container">
+        <div class="navbar__top">
+          <a href="menu.html">
+            <img class="RestLogo" src="images/TA_LOGO.png" alt="Restaurant logo" />
+          </a>
+
+          <button class="navBar__bars" id="navToggle">
+            <span>MENU</span>
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        
+        <nav>
+          <ul class="navBar__links">
+            <li><a href="#home">
+                <span>Home</span>
+                <div class="active_line"></div>
+              </a></li>
+
+            <li><a href="#about">
+                <span>About</span>
+                <div class="active_line"></div>
+              </a></li>
+
+            <li><a href="menu.html">
+                <span>Menu</span>
+                <div class="active_line"></div>
+              </a></li>
+
+            <li><a href="#gallery">
+                <span>Gallery</span>
+                <div class="active_line"></div>
+              </a></li>
+
+            <li><a href="#ReserveTable">
+                <span>Reserve a table</span>
+                <div class="active_line"></div>
+              </a></li>
+
+            <button class="navBar__close" id="navClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="maskBG"></div>
+
+    <section id="home">
+      <div class="home-container">
+        <img class="LandingImg" src="images/landing_image.jpg" alt="Restaurant image">
+      </div>
+
+      <div class="LandTitle hidden">
+        <div class="Title__upper">
+          <span class="welcome_text">Welcome</span> <span class="to_text">to</span>
+        </div>
+        <img class="Tasty_text" src="images/TastyArt.png" alt="Tasty Art">
+        <span class="Rest_text">Restaurant website</span>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="Title hidden">
+        <span class="aboutTitle_left">ABOUT</span>
+        <span class="aboutTitle_right">Us</span>
+      </div>
+
+      <div class="aboutContainer">
+        <img class="aboutImg-1 hidden" src="images/restaurant_interior.jpg" alt="Restaurant interior">
+        
+        <p class="aboutText-1 hidden">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <div class="imagesBottom hidden">
+          <img class="aboutImg-2" src="images/table.jpg" alt="Restaurant Table">
+          <img class="aboutImg-3" src="images/dishes.jpg" alt="Restaurant Dishes">
+        </div>
+
+        <p class="aboutText-2 hidden">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <p class="aboutPara hidden">
+          Only a masterful chef can ensure every bite is as delicious and memorable as the last.
+        </p>
+      </div>
+    </section>
+
+    <section id="menu" class="container">
+      <div class="Title hidden">
+        <span class="menuTitle_left">Our</span>
+        <span class="menuTitle_right">MENU</span>
+      </div>
+
+      <div class="menuContainer">
+        <a class="menuLink-1" href="menu.html#mainDishes">
+          <div class="menu-wrapper menu-w1 hidden">
+            <img class="menuImg main_dish-img" src="images/main_dish.jpg" alt="Restaurant main dish">
+            <div class="menu-wBottom">
+              <span>Main Dish</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="menuLink-2" href="menu.html#soups">
+          <div class="menu-wrapper menu-w2 hidden">
+            <img class="menuImg soup-img" src="images/soup.jpg" alt="Restaurant soup">
+            <div class="menu-wBottom">
+              <span>Soup</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="menuLink-3" href="menu.html#salades">
+          <div class="menu-wrapper menu-w3 hidden">
+            <img class="menuImg salade-img" src="images/salade.jpg" alt="Restaurant salade">
+            <div class="menu-wBottom">
+              <span>Salade</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="menuLink-4" href="menu.html#desserts">
+          <div class="menu-wrapper menu-w4 hidden">
+            <img class="menuImg dessert-img" src="images/dessert.jpg" alt="Restaurant dessert">
+            <div class="menu-wBottom">
+              <span>Dessert</span>
+            </div>
+          </div>
+        </a>
+
+        <p class="menuPara hidden">
+          Immerse yourself in a symphony of flavors that dance on your palate, leaving you craving the next sensational sensation.
+        </p>
+      </div>
+    </section>
+
+    <section id="ReserveTable" class="container">
+      <div class="reserveTitle hidden">
+        <span class="reserveTitle_left">Reserve a</span>
+        <span class="reserveTitle_right">TABLE</span>
+      </div>
+
+      <form action="">
+        <div class="ReserveCard">
+          <div class="FormInput">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Name*">
+          </div>
+
+          <div class="FormInput">
+            <label for="number">Phone number:</label><br>
+            <input type="tel" id="number" name="number" placeholder="Phone number*">
+          </div>
+
+          <div class="FormInput">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email*">
+          </div>
+
+          <div class="FormInput">
+            <label for="date">Date:</label><br>
+            <input type="date" id="date" name="date">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="reviews" class="container">
+      <div class="reviewsTitle hidden">
+        <span class="reviewsTitle_left">What</span>
+        <span class="reviewsTitle_right">OUR CLIENTS SAY</span>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="reviewsContainer swiper-wrapper">
+
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+    
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+
+            <div class="reviewCard swiper-slide">
+              <div class="r__upper">
+                <img src="images/senior-man-face-portrait-wearing-bowler-hat.jpg" alt="Client picture demo">
+                <span>Ahmed BOUKHTA</span>
+              </div>
+    
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+    
+              <div class="review_stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+              
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-Btn"></div>
+        <div class="swiper-button-prev swiper-Btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="container">
+      <div class="Title hidden">
+        <span class="galleryTitle_left">Our</span>
+        <span class="galleryTitle_right">GALLERY</span>
+      </div>
+
+      <div class="galleryContainer">
+        <img class="galleryImg-1" src="images/pexels-cottonbro-3171129.jpg" alt="Restaurant image 1">
+        <img class="galleryImg-2" src="images/pexels-prateekjaiswal-13537758.jpg" alt="Restaurant image 2">
+        <img class="galleryImg-3" src="images/pexels-filirovska-8251562.jpg" alt="Restaurant image 3">
+        <img class="galleryImg-4" src="images/pexels-reneasmussen-2977514.jpg" alt="Restaurant image 4">
+        <img class="galleryImg-5" src="images/pexels-solliefoto-313700.jpg" alt="Restaurant image 5">
+        <img class="galleryImg-6" src="images/pexels-naimbic-2291603.jpg" alt="Restaurant image 6">
+      </div>
+    </section>
+
+    <section id="location" class="container">
+      <div class="Title hidden">
+        <span class="locationTitle_left">Our</span>
+        <span class="locationTitle_right">LOCATION</span>
+      </div>
+
+      <div class="locationContainer">
+        <div class="location-info">
+          <span class="info-left">WORKING HOURS:</span>
+          <span class="info-right">Monday - Sunday, 10.00 - 23.00</span>
+        </div>
+
+        <div class="location-info">
+          <span class="info-left">ADDRESS:</span>
+          <span class="info-right">Somewhere 4700, Morocco</span>
+        </div>
+
+        <div class="location-info">
+          <span class="info-left">EMAIL:</span>
+          <span class="info-right">tastyArt2024@gmail.com</span>
+        </div>
+
+        <div class="location-info">
+          <span class="info-left">PHONE:</span>
+          <span class="info-right">+212 6 45 98 32 21</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerPage">
+        <div class="footer_top">
+          <div class="footerLinks hidden">
+            <img class="footerLogo" src="images/TA_LOGO.png" alt="TastyArt logo">
+  
+            <a class="short_links" href="#home">
+              HOME
+            </a>
+            <a class="short_links" href="#about">
+              ABOUT
+            </a>
+            <a class="short_links" href="menu.html">
+              MENU
+            </a>
+            <a class="short_links" href="#gallery">
+              GALLERY
+            </a>
+            <a class="short_links" href="#ReserveTable">
+              RESERVE A TABLE
+            </a>
+            <a class="short_links" href="faq.html">
+              FAQ
+            </a>
+          </div>
+  
+          <div class="followUs hidden">
+            <div class="footerTitle">
+              <span class="followUs_left">FOLLOW</span>
+              <span class="followUs_right">Us</span>
+            </div>
+  
+            <div class="social_links">
+              <div class="links_container">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>Linkedin</span>
+              </div>
+
+              <div class="links_container">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Youtube</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footerContacts hidden">
+            <div class="footerTitle">
+              <span class="Contacts_left">C</span>
+              <span class="Contacts_right">ONTACTS</span>
+            </div>
+  
+            <div class="footerAddress">
+              <span class="address_title">ADDRESS</span>
+              <span class="address_details">Somewhere 4700, Morocco</span>
+  
+              <span class="address_title">PHONE</span>
+              <span class="address_details">+212 6 45 98 32 21</span>
+  
+              <span class="address_title">EMAIL</span>
+              <span class="address_details">tastyArt2024@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#home">
+          <div class="backTop">
+            <i class="fa-solid fa-arrow-up-long"></i>
+          </div>
+        </a>
+
+        <hr class="solid">
+
+        <div class="footer_bootom hidden">
+          <span>©2024 Tasty Art. All rights reserved.</span>
+          <p>Monday - Sunday, From <span style="color: var(--primary-color);">10.00</span> to <span style="color: var(--primary-color);">23.00</span></p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

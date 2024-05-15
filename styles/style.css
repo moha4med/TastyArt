@@ -153,17 +153,17 @@ body {
 
 .home-container {
   position: relative;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  top: 0%;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
 }
 .LandingImg {
-  position: relative;
-  top: -6%;
   height: 100vh;
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
   border-bottom-left-radius: 30%;
   border-bottom: 10px solid var(--primary-color);
   z-index: -2;
@@ -350,14 +350,19 @@ body {
     max-width: 1024px;
   }
 
+  #home  {
+    margin-bottom: 80px;
+  }
+
+  .home-container {
+    height: 110.4vh;
+  }
   .LandingImg {
-    left: 0;
-    transform: translate(0%, 0%);
     height: 110.4vh;
   }
 
   .LandTitle {
-    position: relative;
+    position: absolute;
     top: 32%;
     left: 10%;
     transform: translate(0%, 0%);
@@ -385,19 +390,16 @@ body {
   #home  {
     margin-bottom: 180px;
   }
-  .LandingImg {
-    position: absolute;
-    top: -24%;
-    left: 0%;
+
+  .home-container {
     height: 128.4vh;
-    transform: translate(0%, 0%);
+  }
+  .LandingImg {
+    top: -6%;
+    height: 128.4vh;   
   }
 
   .LandTitle {
-    position: relative;
-    top: 32%;
-    left: 10%;
-    transform: translate(0%, 0%);
     width: 46vw;
   }
 
@@ -443,11 +445,6 @@ body {
   }
 
   .LandTitle {
-    border: 1px solid rgba(134, 255, 47, 0);
-    position: relative;
-    top: 32%;
-    left: 10%;
-    transform: translate(0%, 0%);
     width: 40vw;
     height: 38vh;
   }

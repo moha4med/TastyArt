@@ -139,13 +139,13 @@ const fetchData = (url, itemList, targetElement) => {
 const mainDishes = document.querySelector("#mainDish");
 let mainDishes_List = [];
 
-fetchData("../data/mainDishes.json", mainDishes_List, mainDishes);
+fetchData("/data/mainDishes.json", mainDishes_List, mainDishes);
 
 /* Soups data */
 const soups = document.querySelector("#Soup");
 let soups_List = [];
 
-fetchData("../data/SoupsData.json", soups_List, soups);
+fetchData("/../data/SoupsData.json", soups_List, soups);
 
 /* Salades data */
 const salades = document.querySelector("#Salade");
@@ -157,7 +157,7 @@ fetchData("../data/SaladesData.json", salades_List, salades);
 const desserts = document.querySelector("#Dessert");
 let desserts_List = [];
 
-fetchData("../data/DessertsData.json", desserts_List, desserts);
+fetchData("/TastyArt/data/DessertsData.json", desserts_List, desserts);
 
 /* - - - - - - - - */
 

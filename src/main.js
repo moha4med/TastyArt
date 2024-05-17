@@ -139,19 +139,19 @@ const fetchData = (url, itemList, targetElement) => {
 const mainDishes = document.querySelector("#mainDish");
 let mainDishes_List = [];
 
-fetchData("/data/mainDishes.json", mainDishes_List, mainDishes);
+fetchData("/TastyArt/data/mainDishes.json", mainDishes_List, mainDishes);
 
 /* Soups data */
 const soups = document.querySelector("#Soup");
 let soups_List = [];
 
-fetchData("/../data/SoupsData.json", soups_List, soups);
+fetchData("/TastyArt/data/SoupsData.json", soups_List, soups);
 
 /* Salades data */
 const salades = document.querySelector("#Salade");
 let salades_List = [];
 
-fetchData("TastyArt/data/SaladesData.json", salades_List, salades);
+fetchData("/TastyArt/data/SaladesData.json", salades_List, salades);
 
 /* Desserts data */
 const desserts = document.querySelector("#Dessert");

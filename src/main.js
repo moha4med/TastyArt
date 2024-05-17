@@ -151,7 +151,7 @@ fetchData("/../data/SoupsData.json", soups_List, soups);
 const salades = document.querySelector("#Salade");
 let salades_List = [];
 
-fetchData("../data/SaladesData.json", salades_List, salades);
+fetchData("TastyArt/data/SaladesData.json", salades_List, salades);
 
 /* Desserts data */
 const desserts = document.querySelector("#Dessert");

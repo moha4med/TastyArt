@@ -25,6 +25,7 @@
     <script defer src="https://kit.fontawesome.com/5183f680e6.js" crossorigin="anonymous"></script>
     <script defer src="src/swiper-bundle.min.js"></script>
     <script defer src="src/main.js"></script>
+    <script defer src="src/menu.js"></script>
   </head>
 
   <body>
@@ -35,8 +36,12 @@
     <header>
       <div class="navBar container">
         <div class="navbar__top">
-          <a href="./menu">
-            <img class="RestLogo" src="images/TA_LOGO.png" alt="Restaurant logo"/>
+          <a href="menu.html">
+            <img
+              class="RestLogo"
+              src="images/TA_LOGO.png"
+              alt="Restaurant logo"
+            />
           </a>
 
           <button class="navBar__bars" id="navToggle">
@@ -48,35 +53,35 @@
         <nav>
           <ul class="navBar__links">
             <li>
-              <a href="./#home">
+              <a href="index.html#home">
                 <span>Home</span>
                 <div class="active_line"></div>
               </a>
             </li>
 
             <li>
-              <a href="./#about">
+              <a href="index.html#about">
                 <span>About</span>
                 <div class="active_line"></div>
               </a>
             </li>
 
             <li>
-              <a href="./menu">
+              <a href="menu.html">
                 <span>Menu</span>
                 <div class="active_line"></div>
               </a>
             </li>
 
             <li>
-              <a href="./#gallery">
+              <a href="index.html#gallery">
                 <span>Gallery</span>
                 <div class="active_line"></div>
               </a>
             </li>
 
             <li>
-              <a href="./#ReserveTable">
+              <a href="index.html#ReserveTable">
                 <span>Reserve a table</span>
                 <div class="active_line"></div>
               </a>
@@ -110,11 +115,60 @@
       </div>
     </div>
 
+    <div class="checkout-TAB">
+      <i class="fa-solid fa-xmark"></i>
+
+      <h1>CHECKOUT</h1>
+
+      <form id="checkout-form" action="/">
+        <div class="checkout-form">
+          <div class="formDetails">
+            <label for="name">Name:</label>
+            <input type="text" id="checkoutName" placeholder="Name*" />
+            <div class="invlaid"></div>
+          </div>
+
+          <div class="formDetails">
+            <label for="email">Phone number:</label>
+            <input type="text" id="checkoutNumber" placeholder="Phone number*" />
+            <div class="invlaid"></div>
+          </div>
+
+          <div class="formDetails">
+            <label for="address">Address:</label>
+            <textarea id="checkoutAddress" placeholder="Address*"></textarea>
+            <div class="invlaid"></div>
+          </div>
+        </div>
+      </form>
+
+      <hr class="breakLine">
+
+      <div class="checkout-details">
+        <span>Total items:</span>
+        <span class="total-quantity">0</span>
+      </div>
+
+      <div class="checkout-details">
+        <span>Total price:</span>
+        <span class="total-price">0 DH</span>
+      </div>
+
+      <div class="cart-btns">
+        <button type="submit" form="checkout-form" class="confirm-btn">Checkout</button>
+      </div>
+    </div>
+
+    <div class="checkoutMessage">
+      <i class="fa-solid fa-circle-check"></i>
+      <h2>Command<br>confirmed!</h2>
+      <p>Thank you for your command. You'll be contacted soon.</p>
+      <button class="closeBtn">OK</button>
+    </div>
+
     <section id="landing">
       <div class="landing-container">
-        <img class="menu-LandingImg"
-          src="images/pexels-mali-110813.jpg" alt="Restaurant image"
-        />
+        <img class="menu-LandingImg" src="images/pexels-mali-110813.jpg" alt="Restaurant image">
         <div class="overlay"></div>
       </div>
 
@@ -267,7 +321,7 @@
 
             <a class="short_links" href="#home"> HOME </a>
             <a class="short_links" href="#about"> ABOUT </a>
-            <a class="short_links" href="./menu"> MENU </a>
+            <a class="short_links" href="menu.html"> MENU </a>
             <a class="short_links" href="#gallery"> GALLERY </a>
             <a class="short_links" href="#ReserveTable"> RESERVE A TABLE </a>
           </div>

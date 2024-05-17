@@ -23,6 +23,7 @@
     <script defer src="https://kit.fontawesome.com/5183f680e6.js" crossorigin="anonymous"></script>
     <script defer src="src/swiper-bundle.min.js"></script>
     <script defer src="src/main.js"></script>
+    <script defer src="src/home.js"></script>
   </head>
 
   <body>
@@ -33,7 +34,7 @@
     <header>
       <div class="navBar container">
         <div class="navbar__top">
-          <a href="./">
+          <a href="index.html">
             <img class="RestLogo" src="images/TA_LOGO.png" alt="Restaurant logo" />
           </a>
 
@@ -55,7 +56,7 @@
                 <div class="active_line"></div>
               </a></li>
 
-            <li><a href="./menu">
+            <li><a href="menu.html">
                 <span>Menu</span>
                 <div class="active_line"></div>
               </a></li>
@@ -138,7 +139,7 @@
       </div>
 
       <div class="menuContainer">
-        <a class="menuLink-1" href="./menu#main-dishes">
+        <a class="menuLink-1" href="menu.html#mainDishes">
           <div class="menu-wrapper menu-w1 hidden">
             <img class="menuImg main_dish-img" src="images/main_dish.jpg" alt="Restaurant main dish">
             <div class="menu-wBottom">
@@ -147,7 +148,7 @@
           </div>
         </a>
 
-        <a class="menuLink-2" href="./menu#soups">
+        <a class="menuLink-2" href="menu.html#soups">
           <div class="menu-wrapper menu-w2 hidden">
             <img class="menuImg soup-img" src="images/soup.jpg" alt="Restaurant soup">
             <div class="menu-wBottom">
@@ -156,7 +157,7 @@
           </div>
         </a>
 
-        <a class="menuLink-3" href="./menu#salades">
+        <a class="menuLink-3" href="menu.html#salades">
           <div class="menu-wrapper menu-w3 hidden">
             <img class="menuImg salade-img" src="images/salade.jpg" alt="Restaurant salade">
             <div class="menu-wBottom">
@@ -165,7 +166,7 @@
           </div>
         </a>
 
-        <a class="menuLink-4" href="./menu#desserts">
+        <a class="menuLink-4" href="menu.html#desserts">
           <div class="menu-wrapper menu-w4 hidden">
             <img class="menuImg dessert-img" src="images/dessert.jpg" alt="Restaurant dessert">
             <div class="menu-wBottom">
@@ -186,30 +187,43 @@
         <span class="reserveTitle_right">TABLE</span>
       </div>
 
-      <form action="">
+      <form id="reserveForm" action="/">
         <div class="ReserveCard">
           <div class="FormInput">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Name*">
+            <input type="text" id="reserveName" name="name" placeholder="Name*">
+            <div class="error"></div>
           </div>
 
           <div class="FormInput">
             <label for="number">Phone number:</label><br>
-            <input type="tel" id="number" name="number" placeholder="Phone number*">
+            <input type="tel" id="reserveNumber" name="number" placeholder="Phone number*">
+            <div class="error"></div>
           </div>
 
           <div class="FormInput">
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="Email*">
+            <input type="email" id="reserveEmail" name="email" placeholder="Email*">
+            <div class="error"></div>
           </div>
 
           <div class="FormInput">
             <label for="date">Date:</label><br>
-            <input type="date" id="date" name="date">
+            <input type="date" id="reserveDate" name="date">
+            <div class="error"></div>
           </div>
         </div>
+
+        <input class="reserveBtn" type="submit" value="Submit">
       </form>
     </section>
+
+    <div class="reservationMessage">
+      <i class="fa-solid fa-circle-check"></i>
+      <h2>Reservation<br>confirmed!</h2>
+      <p>Thank you for your reservation. A mail has been sent to your email.</p>
+      <button class="closeBtn">OK</button>
+    </div>
 
     <section id="reviews" class="container">
       <div class="reviewsTitle hidden">
@@ -401,7 +415,7 @@
             <a class="short_links" href="#about">
               ABOUT
             </a>
-            <a class="short_links" href="./menu">
+            <a class="short_links" href="menu.html">
               MENU
             </a>
             <a class="short_links" href="#gallery">

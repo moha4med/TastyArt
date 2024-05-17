@@ -1,0 +1,34 @@
+[
+  {
+    "id": 7,
+    "img_class": "harira-img",
+    "name": "Moroccon Harira",
+    "img_src": "images/harira.jpg",
+    "price": 35,
+    "ingredients": "Lentils - chickpeas - tomatoes - celery - Meat - spices - herbs"
+  },
+  {
+    "id": 8,
+    "img_class": "tomatoS-img",
+    "name": "Tomato Soup",
+    "img_src": "images/sunorwind-xBaa9lSMvP0-unsplash.jpg",
+    "price": 35,
+    "ingredients": "Tomatoes - onion - butter - Garlic - spices - Parmesan cheese"
+  },
+  {
+    "id": 9,
+    "img_class": "ramen-img",
+    "name": "Ramen Noodle Soup",
+    "img_src": "images/alison-marras-SdS_XZ2CBqo-unsplash.jpg",
+    "price": 40,
+    "ingredients": "Garlic - eggs - ginger - ramen noodles - soy sauce - nuri"
+  },
+  {
+    "id": 10,
+    "img_class": "beefN-img",
+    "name": "Noodle Beef Soup",
+    "img_src": "images/mae-mu-H5Hj8QV2Tx4-unsplash.jpg",
+    "price": 60,
+    "ingredients": "beef - rice noodles - mint - basil - lime - chili sauce"
+  }
+]

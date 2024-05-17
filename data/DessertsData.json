@@ -1,0 +1,34 @@
+[
+  {
+    "id": 15,
+    "img_class": "brownies-img",
+    "name": "Chocolate Brownies",
+    "img_src": "images/priscilla-du-preez-_BUlk40NTNU-unsplash.jpg",
+    "price": 25,
+    "ingredients": "Chocolate - milk - eggs - vanilla - butter - sugar - flour"
+  },
+  {
+    "id": 16,
+    "img_class": "vanillaC-img",
+    "name": "Vanilla Lemon Cake",
+    "img_src": "images/olga-trishi-1yaLQxjvSlU-unsplash.jpg",
+    "price": 20,
+    "ingredients": "Vanilla - lemon - eggs - butter - sugar - flour"
+  },
+  {
+    "id": 17,
+    "img_class": "toastBB-img",
+    "name": "Toast Bread with Blueberry",
+    "img_src": "images/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg",
+    "price": 30,
+    "ingredients": "Toast - blueberry - honey - banana - eggs - butter - sugar - flour"
+  },
+  {
+    "id": 18,
+    "img_class": "baklava-img",
+    "name": "Baklava",
+    "img_src": "images/baklava-recipe-9.jpg",
+    "price": 25,
+    "ingredients": "Pistachios - walnuts - hazelnuts - sugar - orange extract - honey"
+  }
+]

@@ -14,7 +14,6 @@ window.addEventListener("load", function () {
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
     } else {
@@ -24,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements.forEach((element) => observer.observe(element));
 
 /* - - - - - - */
 
@@ -32,7 +31,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 /* Swiper */
 
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 2,
   spaceBetween: 30,
   loop: true,
   centerSlide: "true",
@@ -92,30 +90,6 @@ if (navClose) {
 /* - - - - */
 
 
-/* Cart list */
-
-const cartOpen = document.querySelector(".cart-icon");
-const cartClose = document.querySelector(".close-cart-btn");
-const cart = document.querySelector(".cart-TAB");
-const sections = document.querySelectorAll(".wrapper");
-
-cartOpen.addEventListener("click", () => {
-  cart.classList.add("cart-show");
-  sections.forEach(section => {
-    section.classList.add("body-move");
-  });
-});
-
-cartClose.addEventListener("click", () => {
-  cart.classList.remove("cart-show");
-  sections.forEach(section => {
-    section.classList.remove("body-move");
-  });
-});
-
-/* - - - - */
-
-
 /* Fetch data */
 
 let allDishes = [];
@@ -165,27 +139,70 @@ const fetchData = (url, itemList, targetElement) => {
 const mainDishes = document.querySelector("#mainDish");
 let mainDishes_List = [];
 
-fetchData("src/mainDishes.json", mainDishes_List, mainDishes);
+fetchData("../data/mainDishes.json", mainDishes_List, mainDishes);
 
 /* Soups data */
 const soups = document.querySelector("#Soup");
 let soups_List = [];
 
-fetchData("src/SoupsData.json", soups_List, soups);
+fetchData("../data/SoupsData.json", soups_List, soups);
 
 /* Salades data */
 const salades = document.querySelector("#Salade");
 let salades_List = [];
 
-fetchData("src/SaladesData.json", salades_List, salades);
+fetchData("../data/SaladesData.json", salades_List, salades);
 
 /* Desserts data */
 const desserts = document.querySelector("#Dessert");
 let desserts_List = [];
 
-fetchData("src/DessertsData.json", desserts_List, desserts);
+fetchData("../data/DessertsData.json", desserts_List, desserts);
 
 /* - - - - - - - - */
+
+
+/* Cart list */
+
+const cartOpen = document.querySelector(".cart-icon");
+const cartClose = document.querySelector(".close-cart-btn");
+const cart = document.querySelector(".cart-TAB");
+const sections = document.querySelectorAll(".wrapper");
+
+cartOpen.addEventListener("click", () => {
+  cart.classList.add("cart-show");
+  sections.forEach(section => {
+    section.classList.add("body-move");
+  });
+});
+
+cartClose.addEventListener("click", () => {
+  cart.classList.remove("cart-show");
+  sections.forEach(section => {
+    section.classList.remove("body-move");
+  });
+});
+
+/* - - - - */
+
+
+/* Checkout */
+
+const checkoutOpen = document.querySelector(".checkout-btn");
+const checkoutClose = document.querySelector(".fa-xmark");
+const checkout = document.querySelector(".checkout-TAB");
+let checkoutTotal = document.querySelector(".checkout-details .total-price");
+let checkoutQuantity = document.querySelector(".checkout-details .total-quantity");
+
+checkoutOpen.addEventListener("click", () => {
+  checkout.classList.add("checkout-show");
+});
+
+checkoutClose.addEventListener("click", () => {
+  checkout.classList.remove("checkout-show");
+});
+
+/* - - - - */
 
 
 /* Add to cart */
@@ -194,13 +211,10 @@ const cartList = document.querySelector(".cart-list");
 let cartTotal = document.querySelector(".cart-icon span");
 let CartListHTML = [];
 
-const saveDataLocal = () => {
-  localStorage.setItem("cart", JSON.stringify(CartListHTML));
-}
-
 const DisplayDish = () => {
   cartList.innerHTML = "";
   let totalItems = 0;
+  let totalPrice = 0;
   if (CartListHTML.length > 0) {
     CartListHTML.forEach(dish => {
       totalItems += dish.quantity;
@@ -230,6 +244,11 @@ const DisplayDish = () => {
       cartList.appendChild(newCart_item);
     });
     cartTotal.innerHTML = totalItems;
+    checkoutQuantity.innerHTML = totalItems;
+    CartListHTML.forEach(dish => {
+      totalPrice += dish.quantity * allDishes[dish.dishID - 1].price;
+    });
+    checkoutTotal.innerHTML = totalPrice + " DH";
   }
 }
 
@@ -266,14 +285,6 @@ addToCart(mainDishes);
 addToCart(salades);
 addToCart(soups);
 addToCart(desserts);
-
-const loadDataLocal = () => {
-  if (localStorage.getItem("cart")) {
-    CartListHTML = JSON.parse(localStorage.getItem("cart"));
-    console.log(CartListHTML);
-    DisplayDish();
-  }
-}
 
 cartList.addEventListener("click", (event) => {
   let clickPosition = event.target;
